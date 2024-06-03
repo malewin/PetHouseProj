@@ -4,5 +4,5 @@ public class DataForConnect {
     public static final String URL = "jdbc:mysql://localhost:3306/" + DB;
     public static final String USER = "root";
     public static final String PASS = "12345";
-    public static final String TABLE = "pitomnik1";
+    public static final String TABLE = "Animals";
 }
