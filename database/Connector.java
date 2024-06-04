@@ -2,7 +2,7 @@ import java.sql.*;
 
 import static database.DataForConnection.*;
 
-public class Connect {
+public class Connector {
     private Connection connect;
 
     static Connection connect() throws ClassNotFoundException, SQLException {
