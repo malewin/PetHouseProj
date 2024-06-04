@@ -1,3 +1,5 @@
+import java.sql.Date;
+
 public class Donkey extends PackAnimals{
 
     private AnimalEnum view = AnimalEnum.Donkey;

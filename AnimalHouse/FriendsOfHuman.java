@@ -1,12 +1,11 @@
+import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
 
 public class FriendsOfHuman extends Animal implements Commands {
 
-    private int id;
-    private String klichka;
     private Date date_of_bitrh;
-    private ArrayList commands = new ArrayList<String>();
+    private List<String> commands = new ArrayList<String>();
     
     public FriendsOfHuman(int id, String klichka, Date date_of_bitrh) {
         super(id, klichka);
@@ -28,13 +27,13 @@ public class FriendsOfHuman extends Animal implements Commands {
 
     @Override
     public void learn_command(String command) {
-        Collections.addAll(commands,command);
+        commands.add(command);
         System.out.println("Новая команда: " + command + " добавлена в список команд: " + commands);
     }
 
     @Override
     public String show_commands() {
-        return commands;
+        return String.join(", ",commands);
     }
     
     

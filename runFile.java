@@ -1,23 +1,32 @@
 import java.util.Scanner;
 
-public class Main {
+public class runFile {
 
-    private void start(){
+    public static void main(String[] args) {
+        
+        start();
+
+    }
+
     
+
+
+    private static void start(){
+
         Scanner scanner = new Scanner(System.in);
         boolean statusSearch = true;
 
         while (statusSearch){
 
-            int choice = scanner.nextInt();
-
             System.out.println("\u001B[34m"+"Меню: " + "\u001B[0m");
             System.out.println("\u001B[32m" + "Выберите пункт:\n1 - Создать таблицу в БД\n" +
-                                "2 - Удалить таблицу из БД\n3 - Добавить животное в таблицу питомника\n" + 
-                                "4 - Удалить животное из таблицы питомника\n5 - Показать всех животных из таблицы питомника\n" +
-                                "6 - Показать животное по id\n7 - Добавить команду животному (по id)\n" + 
-                                "8 - Выйти из меню: " + "\u001B[0m");
-        
+            "2 - Удалить таблицу из БД\n3 - Добавить животное в таблицу питомника\n" + 
+            "4 - Удалить животное из таблицы питомника\n5 - Показать всех животных из таблицы питомника\n" +
+            "6 - Показать животное по id\n7 - Добавить команду животному (по id)\n" + 
+            "8 - Выйти из меню: " + "\u001B[0m");
+
+            int choice = scanner.nextInt();
+            
             switch (choice) {
                 case 1: // создать таблицу в БД
                     System.out.println();
@@ -59,5 +68,4 @@ public class Main {
         }
 
     }
-
 }

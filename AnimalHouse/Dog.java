@@ -1,3 +1,6 @@
+
+import java.sql.Date;
+
 public class Dog extends Pets{
 
     private AnimalEnum view = AnimalEnum.Dog;

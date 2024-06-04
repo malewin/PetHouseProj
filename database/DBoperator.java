@@ -1,6 +1,6 @@
 import java.sql.Connection;
 import java.sql.SQLException;
-import database.Connector.connect;
+import java.sql.Statement;
 
 public class DBoperator {
 
@@ -15,7 +15,7 @@ public class DBoperator {
                         + "commands TEXT,"
                         + "`type` ENUM('Pets','PackAnimals'),"
                         + "view ENUM('CAT','Dog','HAMSTER','Horse','Donkey','Camel');";
-        this.connect = connect();
+        this.connect = Connector.connect();
         try (Connection connection = this.connect) {
             Statement statement = connection.createStatement();
             statement.executeUpdate(CREATE_TABLE);

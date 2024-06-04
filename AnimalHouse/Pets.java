@@ -1,3 +1,6 @@
+
+import java.sql.Date;
+
 public class Pets extends FriendsOfHuman{
     
     private String type = "Pets";
