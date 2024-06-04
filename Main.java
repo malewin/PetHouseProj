@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Menu {
+public class Main {
 
     private void start(){
     
@@ -59,7 +59,5 @@ public class Menu {
         }
 
     }
-
-    start();
 
 }
