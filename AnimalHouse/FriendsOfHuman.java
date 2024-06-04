@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class FriendsOfHuman extends Animal implements Commands {
 
@@ -24,5 +25,17 @@ public class FriendsOfHuman extends Animal implements Commands {
     public void setDate_of_bitrh(Date date_of_bitrh) {
         this.date_of_bitrh = date_of_bitrh;
     }
+
+    @Override
+    public void learn_command(String command) {
+        Collections.addAll(commands,command);
+        System.out.println("Новая команда: " + command + " добавлена в список команд: " + commands);
+    }
+
+    @Override
+    public String show_commands() {
+        return commands;
+    }
+    
     
 }
