@@ -3,13 +3,9 @@ import java.util.Scanner;
 public class runFile {
 
     public static void main(String[] args) {
-        
-        start();
-
-    }
-
     
-
+        start();
+    }
 
     private static void start(){
 
